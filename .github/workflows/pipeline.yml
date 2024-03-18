@@ -1,9 +1,11 @@
 name: pipeline
 
-on:
+on: 
   push:
-    - feature/*
-  
+    branches:
+      - main
+      - feature/*
+
 jobs:
 
   analyze:
